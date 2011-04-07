@@ -7,7 +7,7 @@
 //
 
 #import "FeedReaderAppDelegate.h"
-#import "ListFeedsVC.h"
+#import "FeedListViewController.h"
 
 
 @implementation FeedReaderAppDelegate
@@ -22,7 +22,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ListFeedsVC *v = [[ListFeedsVC alloc] initWithNibName:@"ListFeedsVC" bundle:[NSBundle mainBundle]];
+    FeedListViewController *v = [[FeedListViewController alloc] initWithNibName:@"ListFeedsVC" bundle:[NSBundle mainBundle]];
 //    ListFeedsVC *v = [[ListFeedsVC alloc] init];
     UINavigationController *n = [[UINavigationController alloc] initWithRootViewController:v];    
     

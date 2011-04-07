@@ -1,15 +1,16 @@
 //
-//  ListFeedItemsVC.m
+//  ListFeedsVC.m
 //  FeedReader
 //
 //  Created by Michal Konturek on 07/04/2011.
 //  Copyright 2011 University of Nottingham. All rights reserved.
 //
 
-#import "ListFeedItemsVC.h"
+#import "FeedListViewController.h"
+#import "FeedItemListViewController.h"
 
 
-@implementation ListFeedItemsVC
+@implementation FeedListViewController
 
 @synthesize tableView;
 
@@ -21,10 +22,6 @@
     self.tableView = nil;
 }
 
-- (IBAction)displayFilterSelector:(id)sender {
-    
-}
-
 
 #pragma mark -
 #pragma mark View Lifecycle
@@ -32,9 +29,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Feed Reader";
+    
     UIBarButtonItem *b = nil;
-    b = [[UIBarButtonItem alloc] initWithTitle:@"Filter" style:UIBarButtonItemStyleBordered target:self action:@selector(displayFilterSelector:)];
+    b = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFeed:)];
     self.navigationItem.rightBarButtonItem = b;
+    
     [b release];
 }
 
@@ -57,16 +57,28 @@
     return 1;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Feeds";
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80.0;
+    return 50.0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UITableViewCell *c = [self.tableView cellForRowAtIndexPath:indexPath];
+    
+    FeedItemListViewController *v = [[FeedItemListViewController alloc] init];
+    v.title = c.textLabel.text;
+    
+    [self.navigationController pushViewController:v animated:YES];
+    [v release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,15 +86,13 @@
     
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID] autorelease];
     }
     
     // customize cell
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = [NSString stringWithFormat:@"Feed Item %i", indexPath.row];
-    cell.detailTextLabel.text = @"lsjdfljasdfljslfjasdlkfjlasdjflsdajflsadjfljasdlfjasdlkfjalsdkfjlasdjfldsajflasjdflajsdfljasdlfkjaslkdf";
-    cell.detailTextLabel.numberOfLines = 2;
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"Feed Name %i", indexPath.row];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];
     
     return cell;
 }
@@ -104,6 +114,7 @@
     [self cleanUp];
     [super dealloc];
 }
+
 
 
 @end

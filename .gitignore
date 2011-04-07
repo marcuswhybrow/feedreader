@@ -11,3 +11,7 @@ AreaMapper.xcodeproj/project.xcworkspace/xcuserdata/michal.xcuserdatad/UserInter
 # osx noise
 .DS_Store
 profile
+
+# xcode
+*.xcodeproj/project.xcworkspace/*
+*.xcodeproj/xcuserdata/*

@@ -6,10 +6,10 @@
 //  Copyright 2011 University of Nottingham. All rights reserved.
 //
 
-#import "ViewFeedItemVC.h"
+#import "FeedItemDetailViewController.h"
 
 
-@implementation ViewFeedItemVC
+@implementation FeedItemDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -1,5 +1,5 @@
 //
-//  ListFeedsVC.h
+//  ListFeedItemsVC.h
 //  FeedReader
 //
 //  Created by Michal Konturek on 07/04/2011.
@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ListFeedsVC : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface FeedItemListViewController : UIViewController {
+
     
     IBOutlet UITableView *tableView;
 }
@@ -17,9 +18,9 @@
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 
-- (IBAction)addFeed:(id)sender;
-
+- (IBAction)displayFilterSelector:(id)sender;
 
 - (void)cleanUp;
+
 
 @end
