@@ -91,7 +91,15 @@
     
     // customize cell
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = [NSString stringWithFormat:@"Feed Name %i", indexPath.row];
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"All Feeds";
+            break;
+            
+        default:
+            cell.textLabel.text = [NSString stringWithFormat:@"Feed Name %i", indexPath.row];
+            break;
+    }
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];
     
     return cell;
