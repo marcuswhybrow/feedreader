@@ -91,10 +91,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellID = @"cellID";
     
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellID];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID] autorelease];
-    }
+    TDBadgedCell *cell = [[[TDBadgedCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID] autorelease];
     
     // customize cell
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -107,7 +104,11 @@
             cell.textLabel.text = [NSString stringWithFormat:@"Feed Name %i", indexPath.row];
             break;
     }
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];
+    
+    int value = arc4random() % 10;
+    
+    if (value > 0)
+        cell.badgeString = [NSString stringWithFormat:@"%i", value];
     
     return cell;
 }

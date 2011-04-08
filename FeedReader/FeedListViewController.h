@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FeedAddViewController.h"
+#import "TDBadgedCell.h"
 
 @interface FeedListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, FeedAddViewControllerDelegate> {
     IBOutlet UITableView *tableView;

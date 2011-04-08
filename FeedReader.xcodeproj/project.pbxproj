@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C9BD2F9134E7DE30038EA17 /* FeedAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */; };
 		2C9BD2FA134E7DE30038EA17 /* FeedAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */; };
+		2C9BD2FF134EB3340038EA17 /* TDBadgedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BD2FE134EB3340038EA17 /* TDBadgedCell.m */; };
 		907C3E36134E3FB000C9D125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E35134E3FB000C9D125 /* UIKit.framework */; };
 		907C3E38134E3FB000C9D125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E37134E3FB000C9D125 /* Foundation.framework */; };
 		907C3E3A134E3FB000C9D125 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E39134E3FB000C9D125 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 		2C9BD2F6134E7DE30038EA17 /* FeedAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAddViewController.h; sourceTree = "<group>"; };
 		2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAddViewController.m; sourceTree = "<group>"; };
 		2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedAddViewController.xib; sourceTree = "<group>"; };
+		2C9BD2FD134EB3340038EA17 /* TDBadgedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDBadgedCell.h; sourceTree = "<group>"; };
+		2C9BD2FE134EB3340038EA17 /* TDBadgedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDBadgedCell.m; sourceTree = "<group>"; };
 		907C3E31134E3FB000C9D125 /* FeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907C3E35134E3FB000C9D125 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		907C3E37134E3FB000C9D125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9BD2FC134EB2E50038EA17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2C9BD2FD134EB3340038EA17 /* TDBadgedCell.h */,
+				2C9BD2FE134EB3340038EA17 /* TDBadgedCell.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		907C3E26134E3FB000C9D125 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +193,7 @@
 		907C3E6E134E420200C9D125 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2C9BD2FC134EB2E50038EA17 /* Utils */,
 				907C3E71134E437200C9D125 /* Controllers */,
 				907C3E70134E42D200C9D125 /* Model */,
 			);
@@ -338,6 +351,7 @@
 				90FB6CF9134E5EDC00CFDC28 /* FeedItemDetailViewController.m in Sources */,
 				90FB6CFE134E609C00CFDC28 /* FeedItemListViewController.m in Sources */,
 				2C9BD2F9134E7DE30038EA17 /* FeedAddViewController.m in Sources */,
+				2C9BD2FF134EB3340038EA17 /* TDBadgedCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
