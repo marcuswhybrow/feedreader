@@ -8,12 +8,15 @@
 
 #import "FeedListViewController.h"
 #import "FeedItemListViewController.h"
-
+#import "FeedAddViewController.h"
 
 @implementation FeedListViewController
 
 @synthesize tableView;
 
+- (void)didAddFeed {
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 #pragma mark -
 #pragma mark Utility Methods
@@ -47,7 +50,12 @@
 #pragma mark Table view delegate
 
 - (IBAction)addFeed:(id)sender {
+    FeedAddViewController *feedAddViewController = [[FeedAddViewController alloc] init];
     
+    feedAddViewController.delegate = self;
+    
+    [self presentModalViewController:feedAddViewController animated:YES];
+    [feedAddViewController release];
 }
 
 #pragma mark -

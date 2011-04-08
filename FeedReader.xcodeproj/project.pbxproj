@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9BD2F9134E7DE30038EA17 /* FeedAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */; };
+		2C9BD2FA134E7DE30038EA17 /* FeedAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */; };
 		907C3E36134E3FB000C9D125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E35134E3FB000C9D125 /* UIKit.framework */; };
 		907C3E38134E3FB000C9D125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E37134E3FB000C9D125 /* Foundation.framework */; };
 		907C3E3A134E3FB000C9D125 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E39134E3FB000C9D125 /* CoreGraphics.framework */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C9BD2F6134E7DE30038EA17 /* FeedAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAddViewController.h; sourceTree = "<group>"; };
+		2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAddViewController.m; sourceTree = "<group>"; };
+		2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedAddViewController.xib; sourceTree = "<group>"; };
 		907C3E31134E3FB000C9D125 /* FeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907C3E35134E3FB000C9D125 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		907C3E37134E3FB000C9D125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +69,7 @@
 		907C3E7F134E4F2800C9D125 /* FeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedListViewController.h; sourceTree = "<group>"; };
 		907C3E80134E4F2800C9D125 /* FeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedListViewController.m; sourceTree = "<group>"; };
 		907C3E81134E4F2800C9D125 /* FeedListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedListViewController.xib; sourceTree = "<group>"; };
-		90FB6CF6134E5EDC00CFDC28 /* FeedItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FeedItemDetailViewController.h; sourceTree = "<group>"; };
+		90FB6CF6134E5EDC00CFDC28 /* FeedItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemDetailViewController.h; sourceTree = "<group>"; };
 		90FB6CF7134E5EDC00CFDC28 /* FeedItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemDetailViewController.m; sourceTree = "<group>"; };
 		90FB6CF8134E5EDC00CFDC28 /* FeedItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemDetailViewController.xib; sourceTree = "<group>"; };
 		90FB6CFB134E609C00CFDC28 /* FeedItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemListViewController.h; sourceTree = "<group>"; };
@@ -208,6 +213,9 @@
 				90FB6CFB134E609C00CFDC28 /* FeedItemListViewController.h */,
 				90FB6CFC134E609C00CFDC28 /* FeedItemListViewController.m */,
 				90FB6CFD134E609C00CFDC28 /* FeedItemListViewController.xib */,
+				2C9BD2F6134E7DE30038EA17 /* FeedAddViewController.h */,
+				2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */,
+				2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 				907C3E83134E4F2800C9D125 /* FeedListViewController.xib in Resources */,
 				90FB6CFA134E5EDC00CFDC28 /* FeedItemDetailViewController.xib in Resources */,
 				90FB6CFF134E609C00CFDC28 /* FeedItemListViewController.xib in Resources */,
+				2C9BD2FA134E7DE30038EA17 /* FeedAddViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +337,7 @@
 				907C3E82134E4F2800C9D125 /* FeedListViewController.m in Sources */,
 				90FB6CF9134E5EDC00CFDC28 /* FeedItemDetailViewController.m in Sources */,
 				90FB6CFE134E609C00CFDC28 /* FeedItemListViewController.m in Sources */,
+				2C9BD2F9134E7DE30038EA17 /* FeedAddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

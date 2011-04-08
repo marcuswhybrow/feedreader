@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FeedAddViewController.h"
 
-
-@interface FeedListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    
+@interface FeedListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, FeedAddViewControllerDelegate> {
     IBOutlet UITableView *tableView;
 }
 
@@ -18,8 +17,6 @@
 
 
 - (IBAction)addFeed:(id)sender;
-
-
 - (void)cleanUp;
 
 @end
