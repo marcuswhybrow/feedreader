@@ -35,6 +35,8 @@
     self.title = @"Feed Reader";
     
     UIBarButtonItem *addNewFeedButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFeed:)];
+    
+    [addNewFeedButton retain];
     self.navigationItem.rightBarButtonItem = addNewFeedButton;
     
     [addNewFeedButton release];
@@ -81,12 +83,12 @@
     
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
-    FeedItemListViewController *v = [[FeedItemListViewController alloc] init];
-    v.title = cell.textLabel.text;
+    FeedItemListViewController *view = [[FeedItemListViewController alloc] initWithState:indexPath.row > 0];
+    view.title = cell.textLabel.text;
     
-    [self.navigationController pushViewController:v animated:YES];
-    [v release];
-    [cell release];
+    [self.navigationController pushViewController:view animated:YES];
+    
+    [view release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -129,6 +131,7 @@
 
 - (void)dealloc {
     [self cleanUp];
+    [tableView release];
     [super dealloc];
 }
 

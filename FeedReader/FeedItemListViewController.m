@@ -13,6 +13,29 @@
 @implementation FeedItemListViewController
 
 @synthesize tableView;
+@synthesize filterButton;
+@synthesize _isFiltered;
+
+# pragma mark - Init
+
+- (id)initWithState:(BOOL)isFiltered {
+    self._isFiltered = isFiltered;
+    return [super init];
+}
+
+# pragma mark - Button Actions
+
+- (IBAction)displayFilterSelector:(id)sender {
+    
+    if (self.filterButton.title == @"All") {
+        self.filterButton.title = @"Filter";
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Filter" message:@"Filtering comming soon." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alertView show];
+        [alertView release];
+    }
+}
 
 
 #pragma mark -
@@ -22,10 +45,6 @@
     self.tableView = nil;
 }
 
-- (IBAction)displayFilterSelector:(id)sender {
-    
-}
-
 
 #pragma mark -
 #pragma mark View Lifecycle
@@ -33,22 +52,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIBarButtonItem *b = nil;
-    b = [[UIBarButtonItem alloc] initWithTitle:@"Filter" style:UIBarButtonItemStyleBordered target:self action:@selector(displayFilterSelector:)];
-    self.navigationItem.rightBarButtonItem = b;
-    [b release];
+    NSString *title = self._isFiltered ? @"All" : @"Filter";
+    
+    self.filterButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleBordered target:self action:@selector(displayFilterSelector:)];
+    
+    [self.filterButton retain];
+    self.navigationItem.rightBarButtonItem = self.filterButton;
+    
+    [title release];
+    [self.filterButton release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-
-#pragma mark -
-#pragma mark Table view delegate
-
-- (IBAction)addFeed:(id)sender {
-    
 }
 
 #pragma mark -
@@ -75,19 +91,15 @@
     view.title = cell.textLabel.text;
     
     [self.navigationController pushViewController:view animated:YES];
-    [view.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.com/"]]];
+    [view.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://en.wikipedia.org/wiki/Special:Random"]]];
     
     [view release];
-    [cell release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellID = @"cellID";
     
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellID];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID] autorelease];
-    }
+    UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID] autorelease];
     
     // customize cell
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -114,6 +126,8 @@
 
 - (void)dealloc {
     [self cleanUp];
+    [self.filterButton release];
+    [self.tableView release];
     [super dealloc];
 }
 

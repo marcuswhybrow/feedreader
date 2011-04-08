@@ -10,16 +10,18 @@
 
 
 @interface FeedItemListViewController : UIViewController {
-
-    
     IBOutlet UITableView *tableView;
+    UIBarButtonItem *filterButton;
+    BOOL _isFiltered;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) UIBarButtonItem *filterButton;
+@property (nonatomic, readwrite) BOOL _isFiltered;
 
 
+- (id)initWithState:(BOOL)isFiltered;
 - (IBAction)displayFilterSelector:(id)sender;
-
 - (void)cleanUp;
 
 
