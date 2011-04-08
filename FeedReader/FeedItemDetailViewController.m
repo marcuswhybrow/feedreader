@@ -26,12 +26,10 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    NSLog(@"finished");
     [self.activityIndicatorView stopAnimating];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    NSLog(@"started");
     [self.activityIndicatorView startAnimating];
 }
 
