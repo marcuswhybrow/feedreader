@@ -34,11 +34,10 @@
     
     self.title = @"Feed Reader";
     
-    UIBarButtonItem *b = nil;
-    b = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFeed:)];
-    self.navigationItem.rightBarButtonItem = b;
+    UIBarButtonItem *addNewFeedButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFeed:)];
+    self.navigationItem.rightBarButtonItem = addNewFeedButton;
     
-    [b release];
+    [addNewFeedButton release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
