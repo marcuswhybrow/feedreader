@@ -29,6 +29,8 @@
     [self.window addSubview:n.view];
     [self.window makeKeyAndVisible];
     
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:3];
+    
     // clean up
     [v release];
 //    [n release];
