@@ -1,5 +1,5 @@
 //
-//  ViewFeedItemVC.m
+//  FeedItemDetailViewController.m
 //  FeedReader
 //
 //  Created by Michal Konturek on 07/04/2011.
