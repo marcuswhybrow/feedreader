@@ -12,14 +12,30 @@
 @implementation FeedItemDetailViewController
 
 @synthesize webView;
+@synthesize activityIndicatorView;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+#pragma mark - UIWebViewDelegate methods
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    
 }
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    // YES if the web view should begin loading content; otherwise, NO.
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"finished");
+    [self.activityIndicatorView stopAnimating];
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    NSLog(@"started");
+    [self.activityIndicatorView startAnimating];
+}
+
+#pragma mark - Dealloc
 
 - (void)dealloc {
     webView.delegate = nil;
