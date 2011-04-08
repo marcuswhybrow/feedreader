@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C9BD2F9134E7DE30038EA17 /* FeedAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */; };
-		2C9BD2FA134E7DE30038EA17 /* FeedAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */; };
-		2C9BD2FF134EB3340038EA17 /* TDBadgedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BD2FE134EB3340038EA17 /* TDBadgedCell.m */; };
+		2C53BC49134FD5EC0099F639 /* FeedAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C53BC37134FD5EC0099F639 /* FeedAddViewController.m */; };
+		2C53BC4A134FD5EC0099F639 /* FeedAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C53BC38134FD5EC0099F639 /* FeedAddViewController.xib */; };
+		2C53BC4B134FD5EC0099F639 /* FeedItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C53BC3A134FD5EC0099F639 /* FeedItemDetailViewController.m */; };
+		2C53BC4C134FD5EC0099F639 /* FeedItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C53BC3B134FD5EC0099F639 /* FeedItemDetailViewController.xib */; };
+		2C53BC4D134FD5EC0099F639 /* FeedItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C53BC3D134FD5EC0099F639 /* FeedItemListViewController.m */; };
+		2C53BC4E134FD5EC0099F639 /* FeedItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C53BC3E134FD5EC0099F639 /* FeedItemListViewController.xib */; };
+		2C53BC4F134FD5EC0099F639 /* FeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C53BC40134FD5EC0099F639 /* FeedListViewController.m */; };
+		2C53BC50134FD5EC0099F639 /* FeedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C53BC41134FD5EC0099F639 /* FeedListViewController.xib */; };
+		2C53BC51134FD5EC0099F639 /* FeedReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C53BC44134FD5EC0099F639 /* FeedReaderAppDelegate.m */; };
+		2C53BC52134FD5EC0099F639 /* TDBadgedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C53BC48134FD5EC0099F639 /* TDBadgedCell.m */; };
 		907C3E36134E3FB000C9D125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E35134E3FB000C9D125 /* UIKit.framework */; };
 		907C3E38134E3FB000C9D125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E37134E3FB000C9D125 /* Foundation.framework */; };
 		907C3E3A134E3FB000C9D125 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E39134E3FB000C9D125 /* CoreGraphics.framework */; };
 		907C3E3C134E3FB000C9D125 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E3B134E3FB000C9D125 /* CoreData.framework */; };
 		907C3E42134E3FB000C9D125 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 907C3E40134E3FB000C9D125 /* InfoPlist.strings */; };
 		907C3E45134E3FB000C9D125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C3E44134E3FB000C9D125 /* main.m */; };
-		907C3E48134E3FB000C9D125 /* FeedReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C3E47134E3FB000C9D125 /* FeedReaderAppDelegate.m */; };
 		907C3E4B134E3FB000C9D125 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907C3E49134E3FB000C9D125 /* MainWindow.xib */; };
 		907C3E4E134E3FB000C9D125 /* FeedReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 907C3E4C134E3FB000C9D125 /* FeedReader.xcdatamodeld */; };
 		907C3E55134E3FB100C9D125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C3E35134E3FB000C9D125 /* UIKit.framework */; };
@@ -26,12 +32,6 @@
 		907C3E60134E3FB100C9D125 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 907C3E5E134E3FB100C9D125 /* InfoPlist.strings */; };
 		907C3E63134E3FB100C9D125 /* FeedReaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 907C3E62134E3FB100C9D125 /* FeedReaderTests.h */; };
 		907C3E65134E3FB100C9D125 /* FeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C3E64134E3FB100C9D125 /* FeedReaderTests.m */; };
-		907C3E82134E4F2800C9D125 /* FeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907C3E80134E4F2800C9D125 /* FeedListViewController.m */; };
-		907C3E83134E4F2800C9D125 /* FeedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907C3E81134E4F2800C9D125 /* FeedListViewController.xib */; };
-		90FB6CF9134E5EDC00CFDC28 /* FeedItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB6CF7134E5EDC00CFDC28 /* FeedItemDetailViewController.m */; };
-		90FB6CFA134E5EDC00CFDC28 /* FeedItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FB6CF8134E5EDC00CFDC28 /* FeedItemDetailViewController.xib */; };
-		90FB6CFE134E609C00CFDC28 /* FeedItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FB6CFC134E609C00CFDC28 /* FeedItemListViewController.m */; };
-		90FB6CFF134E609C00CFDC28 /* FeedItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FB6CFD134E609C00CFDC28 /* FeedItemListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C9BD2F6134E7DE30038EA17 /* FeedAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAddViewController.h; sourceTree = "<group>"; };
-		2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAddViewController.m; sourceTree = "<group>"; };
-		2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedAddViewController.xib; sourceTree = "<group>"; };
-		2C9BD2FD134EB3340038EA17 /* TDBadgedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDBadgedCell.h; sourceTree = "<group>"; };
-		2C9BD2FE134EB3340038EA17 /* TDBadgedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDBadgedCell.m; sourceTree = "<group>"; };
+		2C53BC36134FD5EC0099F639 /* FeedAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedAddViewController.h; sourceTree = "<group>"; };
+		2C53BC37134FD5EC0099F639 /* FeedAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedAddViewController.m; sourceTree = "<group>"; };
+		2C53BC38134FD5EC0099F639 /* FeedAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedAddViewController.xib; sourceTree = "<group>"; };
+		2C53BC39134FD5EC0099F639 /* FeedItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemDetailViewController.h; sourceTree = "<group>"; };
+		2C53BC3A134FD5EC0099F639 /* FeedItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemDetailViewController.m; sourceTree = "<group>"; };
+		2C53BC3B134FD5EC0099F639 /* FeedItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemDetailViewController.xib; sourceTree = "<group>"; };
+		2C53BC3C134FD5EC0099F639 /* FeedItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemListViewController.h; sourceTree = "<group>"; };
+		2C53BC3D134FD5EC0099F639 /* FeedItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemListViewController.m; sourceTree = "<group>"; };
+		2C53BC3E134FD5EC0099F639 /* FeedItemListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemListViewController.xib; sourceTree = "<group>"; };
+		2C53BC3F134FD5EC0099F639 /* FeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedListViewController.h; sourceTree = "<group>"; };
+		2C53BC40134FD5EC0099F639 /* FeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedListViewController.m; sourceTree = "<group>"; };
+		2C53BC41134FD5EC0099F639 /* FeedListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedListViewController.xib; sourceTree = "<group>"; };
+		2C53BC43134FD5EC0099F639 /* FeedReaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedReaderAppDelegate.h; sourceTree = "<group>"; };
+		2C53BC44134FD5EC0099F639 /* FeedReaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedReaderAppDelegate.m; sourceTree = "<group>"; };
+		2C53BC47134FD5EC0099F639 /* TDBadgedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDBadgedCell.h; sourceTree = "<group>"; };
+		2C53BC48134FD5EC0099F639 /* TDBadgedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDBadgedCell.m; sourceTree = "<group>"; };
 		907C3E31134E3FB000C9D125 /* FeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907C3E35134E3FB000C9D125 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		907C3E37134E3FB000C9D125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,8 +70,6 @@
 		907C3E41134E3FB000C9D125 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		907C3E43134E3FB000C9D125 /* FeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeedReader-Prefix.pch"; sourceTree = "<group>"; };
 		907C3E44134E3FB000C9D125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		907C3E46134E3FB000C9D125 /* FeedReaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedReaderAppDelegate.h; sourceTree = "<group>"; };
-		907C3E47134E3FB000C9D125 /* FeedReaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedReaderAppDelegate.m; sourceTree = "<group>"; };
 		907C3E4A134E3FB000C9D125 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		907C3E4D134E3FB000C9D125 /* FeedReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedReader.xcdatamodel; sourceTree = "<group>"; };
 		907C3E54134E3FB100C9D125 /* FeedReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,15 +78,6 @@
 		907C3E61134E3FB100C9D125 /* FeedReaderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeedReaderTests-Prefix.pch"; sourceTree = "<group>"; };
 		907C3E62134E3FB100C9D125 /* FeedReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedReaderTests.h; sourceTree = "<group>"; };
 		907C3E64134E3FB100C9D125 /* FeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedReaderTests.m; sourceTree = "<group>"; };
-		907C3E7F134E4F2800C9D125 /* FeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedListViewController.h; sourceTree = "<group>"; };
-		907C3E80134E4F2800C9D125 /* FeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedListViewController.m; sourceTree = "<group>"; };
-		907C3E81134E4F2800C9D125 /* FeedListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedListViewController.xib; sourceTree = "<group>"; };
-		90FB6CF6134E5EDC00CFDC28 /* FeedItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemDetailViewController.h; sourceTree = "<group>"; };
-		90FB6CF7134E5EDC00CFDC28 /* FeedItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemDetailViewController.m; sourceTree = "<group>"; };
-		90FB6CF8134E5EDC00CFDC28 /* FeedItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemDetailViewController.xib; sourceTree = "<group>"; };
-		90FB6CFB134E609C00CFDC28 /* FeedItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemListViewController.h; sourceTree = "<group>"; };
-		90FB6CFC134E609C00CFDC28 /* FeedItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemListViewController.m; sourceTree = "<group>"; };
-		90FB6CFD134E609C00CFDC28 /* FeedItemListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +106,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C9BD2FC134EB2E50038EA17 /* Utils */ = {
+		2C53BC30134FD3A90099F639 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C9BD2FD134EB3340038EA17 /* TDBadgedCell.h */,
-				2C9BD2FE134EB3340038EA17 /* TDBadgedCell.m */,
 			);
-			name = Utils;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2C53BC34134FD5EC0099F639 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C53BC35134FD5EC0099F639 /* Controllers */,
+				2C53BC42134FD5EC0099F639 /* Delegates */,
+				2C53BC45134FD5EC0099F639 /* Models */,
+				2C53BC46134FD5EC0099F639 /* Utils */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C53BC35134FD5EC0099F639 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C53BC36134FD5EC0099F639 /* FeedAddViewController.h */,
+				2C53BC37134FD5EC0099F639 /* FeedAddViewController.m */,
+				2C53BC38134FD5EC0099F639 /* FeedAddViewController.xib */,
+				2C53BC39134FD5EC0099F639 /* FeedItemDetailViewController.h */,
+				2C53BC3A134FD5EC0099F639 /* FeedItemDetailViewController.m */,
+				2C53BC3B134FD5EC0099F639 /* FeedItemDetailViewController.xib */,
+				2C53BC3C134FD5EC0099F639 /* FeedItemListViewController.h */,
+				2C53BC3D134FD5EC0099F639 /* FeedItemListViewController.m */,
+				2C53BC3E134FD5EC0099F639 /* FeedItemListViewController.xib */,
+				2C53BC3F134FD5EC0099F639 /* FeedListViewController.h */,
+				2C53BC40134FD5EC0099F639 /* FeedListViewController.m */,
+				2C53BC41134FD5EC0099F639 /* FeedListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2C53BC42134FD5EC0099F639 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2C53BC43134FD5EC0099F639 /* FeedReaderAppDelegate.h */,
+				2C53BC44134FD5EC0099F639 /* FeedReaderAppDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2C53BC45134FD5EC0099F639 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C53BC46134FD5EC0099F639 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2C53BC47134FD5EC0099F639 /* TDBadgedCell.h */,
+				2C53BC48134FD5EC0099F639 /* TDBadgedCell.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		907C3E26134E3FB000C9D125 = {
@@ -148,10 +201,9 @@
 		907C3E3D134E3FB000C9D125 /* FeedReader */ = {
 			isa = PBXGroup;
 			children = (
-				907C3E6E134E420200C9D125 /* Classes */,
+				2C53BC34134FD5EC0099F639 /* Classes */,
+				2C53BC30134FD3A90099F639 /* Resources */,
 				907C3E6F134E420D00C9D125 /* Library */,
-				907C3E46134E3FB000C9D125 /* FeedReaderAppDelegate.h */,
-				907C3E47134E3FB000C9D125 /* FeedReaderAppDelegate.m */,
 				907C3E49134E3FB000C9D125 /* MainWindow.xib */,
 				907C3E4C134E3FB000C9D125 /* FeedReader.xcdatamodeld */,
 				907C3E3E134E3FB000C9D125 /* Supporting Files */,
@@ -190,47 +242,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		907C3E6E134E420200C9D125 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2C9BD2FC134EB2E50038EA17 /* Utils */,
-				907C3E71134E437200C9D125 /* Controllers */,
-				907C3E70134E42D200C9D125 /* Model */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		907C3E6F134E420D00C9D125 /* Library */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Library;
-			sourceTree = "<group>";
-		};
-		907C3E70134E42D200C9D125 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		907C3E71134E437200C9D125 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				907C3E7F134E4F2800C9D125 /* FeedListViewController.h */,
-				907C3E80134E4F2800C9D125 /* FeedListViewController.m */,
-				907C3E81134E4F2800C9D125 /* FeedListViewController.xib */,
-				90FB6CF6134E5EDC00CFDC28 /* FeedItemDetailViewController.h */,
-				90FB6CF7134E5EDC00CFDC28 /* FeedItemDetailViewController.m */,
-				90FB6CF8134E5EDC00CFDC28 /* FeedItemDetailViewController.xib */,
-				90FB6CFB134E609C00CFDC28 /* FeedItemListViewController.h */,
-				90FB6CFC134E609C00CFDC28 /* FeedItemListViewController.m */,
-				90FB6CFD134E609C00CFDC28 /* FeedItemListViewController.xib */,
-				2C9BD2F6134E7DE30038EA17 /* FeedAddViewController.h */,
-				2C9BD2F7134E7DE30038EA17 /* FeedAddViewController.m */,
-				2C9BD2F8134E7DE30038EA17 /* FeedAddViewController.xib */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,10 +321,10 @@
 			files = (
 				907C3E42134E3FB000C9D125 /* InfoPlist.strings in Resources */,
 				907C3E4B134E3FB000C9D125 /* MainWindow.xib in Resources */,
-				907C3E83134E4F2800C9D125 /* FeedListViewController.xib in Resources */,
-				90FB6CFA134E5EDC00CFDC28 /* FeedItemDetailViewController.xib in Resources */,
-				90FB6CFF134E609C00CFDC28 /* FeedItemListViewController.xib in Resources */,
-				2C9BD2FA134E7DE30038EA17 /* FeedAddViewController.xib in Resources */,
+				2C53BC4A134FD5EC0099F639 /* FeedAddViewController.xib in Resources */,
+				2C53BC4C134FD5EC0099F639 /* FeedItemDetailViewController.xib in Resources */,
+				2C53BC4E134FD5EC0099F639 /* FeedItemListViewController.xib in Resources */,
+				2C53BC50134FD5EC0099F639 /* FeedListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,13 +361,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				907C3E45134E3FB000C9D125 /* main.m in Sources */,
-				907C3E48134E3FB000C9D125 /* FeedReaderAppDelegate.m in Sources */,
 				907C3E4E134E3FB000C9D125 /* FeedReader.xcdatamodeld in Sources */,
-				907C3E82134E4F2800C9D125 /* FeedListViewController.m in Sources */,
-				90FB6CF9134E5EDC00CFDC28 /* FeedItemDetailViewController.m in Sources */,
-				90FB6CFE134E609C00CFDC28 /* FeedItemListViewController.m in Sources */,
-				2C9BD2F9134E7DE30038EA17 /* FeedAddViewController.m in Sources */,
-				2C9BD2FF134EB3340038EA17 /* TDBadgedCell.m in Sources */,
+				2C53BC49134FD5EC0099F639 /* FeedAddViewController.m in Sources */,
+				2C53BC4B134FD5EC0099F639 /* FeedItemDetailViewController.m in Sources */,
+				2C53BC4D134FD5EC0099F639 /* FeedItemListViewController.m in Sources */,
+				2C53BC4F134FD5EC0099F639 /* FeedListViewController.m in Sources */,
+				2C53BC51134FD5EC0099F639 /* FeedReaderAppDelegate.m in Sources */,
+				2C53BC52134FD5EC0099F639 /* TDBadgedCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
