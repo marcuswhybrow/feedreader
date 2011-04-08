@@ -13,6 +13,8 @@
 
 @synthesize webView;
 @synthesize activityIndicatorView;
+@synthesize backButton;
+@synthesize forwardButton;
 
 #pragma mark - UIWebViewDelegate methods
 
@@ -27,10 +29,28 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [self.activityIndicatorView stopAnimating];
+    [self updateNavigationButtons];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     [self.activityIndicatorView startAnimating];
+}
+
+#pragma mark - Button Actions
+
+- (void)back:(id)sender {
+    [self.webView goBack];
+    [self updateNavigationButtons];
+}
+
+- (void)forward:(id)sender {
+    [self.webView goForward];
+    [self updateNavigationButtons];
+}
+
+- (void)updateNavigationButtons {
+    [self.backButton setEnabled:[self.webView canGoBack]];
+    [self.forwardButton setEnabled:[self.webView canGoForward]];
 }
 
 #pragma mark - Dealloc
@@ -54,6 +74,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self updateNavigationButtons];
 }
 
 - (void)viewDidUnload {
