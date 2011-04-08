@@ -79,13 +79,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    UITableViewCell *c = [self.tableView cellForRowAtIndexPath:indexPath];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
     FeedItemListViewController *v = [[FeedItemListViewController alloc] init];
-    v.title = c.textLabel.text;
+    v.title = cell.textLabel.text;
     
     [self.navigationController pushViewController:v animated:YES];
     [v release];
+    [cell release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

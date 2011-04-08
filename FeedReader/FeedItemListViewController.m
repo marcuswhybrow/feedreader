@@ -7,6 +7,7 @@
 //
 
 #import "FeedItemListViewController.h"
+#import "FeedItemDetailViewController.h"
 
 
 @implementation FeedItemListViewController
@@ -67,6 +68,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    
+    FeedItemDetailViewController *view = [[FeedItemDetailViewController alloc] init];
+    view.title = cell.textLabel.text;
+    
+    [self.navigationController pushViewController:view animated:YES];
+    [view.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.com/"]]];
+    
+    [view release];
+    [cell release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
